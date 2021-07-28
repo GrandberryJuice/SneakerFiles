@@ -7,15 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
+
+struct HomeView: View {
+    let networkManager = NetworkManager()
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
+
+
 }
 
-struct ContentView_Previews: PreviewProvider {
+func fetchPoplularKicks() {
+    
+}
+
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
