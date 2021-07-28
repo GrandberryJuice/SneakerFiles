@@ -12,7 +12,7 @@ struct HomeView: View {
         NavigationView  {
             ZStack {
                 Color.red
-            }.navigationTitle("Home")
+            }.navigationTitle("SneakerFiles")
         }
     }
 }
