@@ -19,8 +19,12 @@
 		382A60E226B1DCAB00A056AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60CB26B1DCAB00A056AA /* Router.swift */; };
 		382A60E326B1DCAB00A056AA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60CC26B1DCAB00A056AA /* HTTPMethod.swift */; };
 		382A60E426B1DCAB00A056AA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60CE26B1DCAB00A056AA /* Errors.swift */; };
+		382A60E926B1EDF200A056AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60E826B1EDF200A056AA /* HomeView.swift */; };
+		382A60EB26B1EF2800A056AA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60EA26B1EF2800A056AA /* SearchView.swift */; };
+		382A60ED26B1EFEB00A056AA /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60EC26B1EFEB00A056AA /* PopularView.swift */; };
+		382A60EF26B1F03000A056AA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60EE26B1F03000A056AA /* SettingsView.swift */; };
 		38B261C426B1CCE10050299D /* SneakerFilesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B261C326B1CCE10050299D /* SneakerFilesApp.swift */; };
-		38B261C626B1CCE10050299D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B261C526B1CCE10050299D /* HomeView.swift */; };
+		38B261C626B1CCE10050299D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B261C526B1CCE10050299D /* MainView.swift */; };
 		38B261C826B1CCE40050299D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B261C726B1CCE40050299D /* Assets.xcassets */; };
 		38B261CB26B1CCE40050299D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B261CA26B1CCE40050299D /* Preview Assets.xcassets */; };
 		38B261D626B1CCE50050299D /* SneakerFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B261D526B1CCE50050299D /* SneakerFilesTests.swift */; };
@@ -57,9 +61,13 @@
 		382A60CB26B1DCAB00A056AA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		382A60CC26B1DCAB00A056AA /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		382A60CE26B1DCAB00A056AA /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		382A60E826B1EDF200A056AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		382A60EA26B1EF2800A056AA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		382A60EC26B1EFEB00A056AA /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		382A60EE26B1F03000A056AA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		38B261C026B1CCE10050299D /* SneakerFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakerFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B261C326B1CCE10050299D /* SneakerFilesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerFilesApp.swift; sourceTree = "<group>"; };
-		38B261C526B1CCE10050299D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		38B261C526B1CCE10050299D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		38B261C726B1CCE40050299D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38B261CA26B1CCE40050299D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38B261CC26B1CCE40050299D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +171,32 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		382A60E526B1EDC100A056AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38B261C526B1CCE10050299D /* MainView.swift */,
+				382A60E826B1EDF200A056AA /* HomeView.swift */,
+				382A60EA26B1EF2800A056AA /* SearchView.swift */,
+				382A60EC26B1EFEB00A056AA /* PopularView.swift */,
+				382A60EE26B1F03000A056AA /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		382A60E626B1EDC800A056AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		382A60E726B1EDD400A056AA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		38B261B726B1CCE10050299D = {
 			isa = PBXGroup;
 			children = (
@@ -187,8 +221,10 @@
 			isa = PBXGroup;
 			children = (
 				382A60B126B1DCAB00A056AA /* Network */,
+				382A60E726B1EDD400A056AA /* ViewModels */,
+				382A60E626B1EDC800A056AA /* Models */,
+				382A60E526B1EDC100A056AA /* Views */,
 				38B261C326B1CCE10050299D /* SneakerFilesApp.swift */,
-				38B261C526B1CCE10050299D /* HomeView.swift */,
 				38B261C726B1CCE40050299D /* Assets.xcassets */,
 				38B261CC26B1CCE40050299D /* Info.plist */,
 				38B261C926B1CCE40050299D /* Preview Content */,
@@ -354,17 +390,21 @@
 				382A60E226B1DCAB00A056AA /* Router.swift in Sources */,
 				382A60D026B1DCAB00A056AA /* URLParameterEncoding.swift in Sources */,
 				382A60E426B1DCAB00A056AA /* Errors.swift in Sources */,
+				382A60EF26B1F03000A056AA /* SettingsView.swift in Sources */,
+				382A60E926B1EDF200A056AA /* HomeView.swift in Sources */,
 				382A60DC26B1DCAB00A056AA /* EndPointTypes.swift in Sources */,
 				382A60DF26B1DCAB00A056AA /* HTTPTask.swift in Sources */,
 				382A60D626B1DCAB00A056AA /* NetworkManager.swift in Sources */,
 				382A60D526B1DCAB00A056AA /* PopularKicks+NetworkManager.swift in Sources */,
 				382A60CF26B1DCAB00A056AA /* ParameterEncoding.swift in Sources */,
 				382A60D126B1DCAB00A056AA /* JSONParameterEncoding.swift in Sources */,
-				38B261C626B1CCE10050299D /* HomeView.swift in Sources */,
+				38B261C626B1CCE10050299D /* MainView.swift in Sources */,
 				382A60DB26B1DCAB00A056AA /* PopularKicksEndPoint.swift in Sources */,
+				382A60EB26B1EF2800A056AA /* SearchView.swift in Sources */,
 				382A60E326B1DCAB00A056AA /* HTTPMethod.swift in Sources */,
 				38B261C426B1CCE10050299D /* SneakerFilesApp.swift in Sources */,
 				382A60E126B1DCAB00A056AA /* NetworkRouter.swift in Sources */,
+				382A60ED26B1EFEB00A056AA /* PopularView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

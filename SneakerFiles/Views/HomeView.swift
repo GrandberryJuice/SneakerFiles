@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  SneakerFiles
 //
 //  Created by Kgrandbe on 7/28/21.
@@ -7,20 +7,14 @@
 
 import SwiftUI
 
-
 struct HomeView: View {
-    let networkManager = NetworkManager()
-    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView  {
+            ZStack {
+                Color.red
+            }.navigationTitle("Home")
+        }
     }
-
-
-}
-
-func fetchPoplularKicks() {
-    
 }
 
 struct HomeView_Previews: PreviewProvider {

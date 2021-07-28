@@ -11,7 +11,7 @@ import SwiftUI
 struct SneakerFilesApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainView()
         }
     }
 }
