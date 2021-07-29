@@ -4,13 +4,17 @@
 //
 //
 
-import Foundation
+import UIKit
+enum APIError:Error {
+    case invalidData
+    case unableToComplete
+}
 
 extension NetworkManager {
-    func getPopularKicks(completion: @escaping(_ error: String?, _ message: String?) ->()) {
+    func getPopularKicks(completion: @escaping(Result<[PopularKicksModel], APIError>) -> Void) {
         popularKicksRouter.request(.getPopularKicks) { (data, response, error) in
             if error != nil {
-                completion("Please check your network connection", nil)
+                completion(.failure(.unableToComplete))
             }
 
             if let response = response as? HTTPURLResponse {
@@ -19,15 +23,19 @@ extension NetworkManager {
                 switch result {
                 case .success:
                     guard let responseData = data else {
-                        completion(NetworkResponse.noData.rawValue, nil)
+                        completion(.failure(.unableToComplete))
                         return
                     }
                     
-                    print(responseData)
-
-                    completion(nil, "Message was deleted")
-                case .failure(let networkFailureError):
-                    completion(networkFailureError, nil)
+                    do {
+                        let apiResponse = try JSONDecoder().decode([PopularKicksModel].self, from: responseData)
+                        print(apiResponse)
+                        completion(.success(apiResponse))
+                    }catch(let error) {
+                        completion(.failure(.invalidData))
+                    }
+                case .failure(_):
+                    completion(.failure(.unableToComplete))
                 }
             }
         }

@@ -55,7 +55,7 @@ extension PopularKicksAPI: EndPointType {
         case .qa:
             return ""
         case .development:
-            return "localhost:4000/home"
+            return "http://localhost:4000/home"
         }
     }
 }

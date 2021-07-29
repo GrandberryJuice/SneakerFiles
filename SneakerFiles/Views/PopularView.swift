@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct PopularView: View {
+    @StateObject private var viewModel = PopularKicksViewModel()
+    
     var body: some View {
         NavigationView  {
             ZStack {
                 Color.blue
             }.navigationTitle("Popular")
-        }
+        }.onAppear { viewModel.getPopularKicks() }
     }
 }
 
