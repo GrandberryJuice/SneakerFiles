@@ -8,7 +8,7 @@
 import Foundation
 
 class PopularKicksViewModel: ObservableObject {
-    @Published var popularKicks: [PopularKicksModel]?
+    @Published var popularKicks: [PopularKicksModel] = []
     
     private var networkManager = NetworkManager()
     
@@ -16,7 +16,9 @@ class PopularKicksViewModel: ObservableObject {
         networkManager.getPopularKicks { [self] result in
             switch result {
             case .success(let popularKicks):
-                self.popularKicks = popularKicks
+                DispatchQueue.main.async {
+                    self.popularKicks = popularKicks
+                }
             case .failure(let error):
                 switch error {
                 case .unableToComplete:

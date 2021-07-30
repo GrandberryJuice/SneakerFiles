@@ -25,6 +25,14 @@
 		382A60EF26B1F03000A056AA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60EE26B1F03000A056AA /* SettingsView.swift */; };
 		382A60F126B2232300A056AA /* PopularKicksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60F026B2232300A056AA /* PopularKicksViewModel.swift */; };
 		382A60F326B225D500A056AA /* PopularKicksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60F226B225D500A056AA /* PopularKicksModel.swift */; };
+		382A60FA26B2D6EB00A056AA /* BrandListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60F926B2D6EB00A056AA /* BrandListView.swift */; };
+		382A60FE26B2D8B800A056AA /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60FD26B2D8B800A056AA /* BrandModel.swift */; };
+		382A610026B2D9C600A056AA /* BrandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A60FF26B2D9C600A056AA /* BrandViewModel.swift */; };
+		382A610226B2E4B800A056AA /* PopularKicksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A610126B2E4B800A056AA /* PopularKicksListView.swift */; };
+		382A610426B309BA00A056AA /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A610326B309BA00A056AA /* RemoteImage.swift */; };
+		382A610626B4718900A056AA /* AddKicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A610526B4718900A056AA /* AddKicksView.swift */; };
+		382A610826B472E500A056AA /* RecentlyWornView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A610726B472E500A056AA /* RecentlyWornView.swift */; };
+		382A610A26B4897200A056AA /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A610926B4897200A056AA /* SearchBarView.swift */; };
 		38B261C426B1CCE10050299D /* SneakerFilesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B261C326B1CCE10050299D /* SneakerFilesApp.swift */; };
 		38B261C626B1CCE10050299D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B261C526B1CCE10050299D /* MainView.swift */; };
 		38B261C826B1CCE40050299D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B261C726B1CCE40050299D /* Assets.xcassets */; };
@@ -69,6 +77,14 @@
 		382A60EE26B1F03000A056AA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		382A60F026B2232300A056AA /* PopularKicksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularKicksViewModel.swift; sourceTree = "<group>"; };
 		382A60F226B225D500A056AA /* PopularKicksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularKicksModel.swift; sourceTree = "<group>"; };
+		382A60F926B2D6EB00A056AA /* BrandListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListView.swift; sourceTree = "<group>"; };
+		382A60FD26B2D8B800A056AA /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
+		382A60FF26B2D9C600A056AA /* BrandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewModel.swift; sourceTree = "<group>"; };
+		382A610126B2E4B800A056AA /* PopularKicksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularKicksListView.swift; sourceTree = "<group>"; };
+		382A610326B309BA00A056AA /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		382A610526B4718900A056AA /* AddKicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKicksView.swift; sourceTree = "<group>"; };
+		382A610726B472E500A056AA /* RecentlyWornView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyWornView.swift; sourceTree = "<group>"; };
+		382A610926B4897200A056AA /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		38B261C026B1CCE10050299D /* SneakerFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakerFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B261C326B1CCE10050299D /* SneakerFilesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerFilesApp.swift; sourceTree = "<group>"; };
 		38B261C526B1CCE10050299D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -178,29 +194,79 @@
 		382A60E526B1EDC100A056AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				38B261C526B1CCE10050299D /* MainView.swift */,
-				382A60E826B1EDF200A056AA /* HomeView.swift */,
-				382A60EA26B1EF2800A056AA /* SearchView.swift */,
-				382A60EC26B1EFEB00A056AA /* PopularView.swift */,
-				382A60EE26B1F03000A056AA /* SettingsView.swift */,
+				382A60FB26B2D86600A056AA /* ReusableViews */,
+				382A60F826B2D6A800A056AA /* SearchView */,
+				382A60F726B2D69E00A056AA /* SettingsView */,
+				382A60F626B2D68E00A056AA /* HomeView */,
+				382A60F526B2D67F00A056AA /* MainView */,
+				382A60F426B2D64D00A056AA /* Popular */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		382A60E626B1EDC800A056AA /* Models */ = {
+		382A60F426B2D64D00A056AA /* Popular */ = {
 			isa = PBXGroup;
 			children = (
 				382A60F226B225D500A056AA /* PopularKicksModel.swift */,
+				382A60EC26B1EFEB00A056AA /* PopularView.swift */,
+				382A60F026B2232300A056AA /* PopularKicksViewModel.swift */,
+				382A610126B2E4B800A056AA /* PopularKicksListView.swift */,
 			);
-			path = Models;
+			path = Popular;
 			sourceTree = "<group>";
 		};
-		382A60E726B1EDD400A056AA /* ViewModels */ = {
+		382A60F526B2D67F00A056AA /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				382A60F026B2232300A056AA /* PopularKicksViewModel.swift */,
+				38B261C526B1CCE10050299D /* MainView.swift */,
 			);
-			path = ViewModels;
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		382A60F626B2D68E00A056AA /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				382A60E826B1EDF200A056AA /* HomeView.swift */,
+				382A610526B4718900A056AA /* AddKicksView.swift */,
+				382A610726B472E500A056AA /* RecentlyWornView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		382A60F726B2D69E00A056AA /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				382A60EE26B1F03000A056AA /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		382A60F826B2D6A800A056AA /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				382A60EA26B1EF2800A056AA /* SearchView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		382A60FB26B2D86600A056AA /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				382A60FC26B2D87600A056AA /* BrandView */,
+				382A610326B309BA00A056AA /* RemoteImage.swift */,
+				382A610926B4897200A056AA /* SearchBarView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		382A60FC26B2D87600A056AA /* BrandView */ = {
+			isa = PBXGroup;
+			children = (
+				382A60F926B2D6EB00A056AA /* BrandListView.swift */,
+				382A60FD26B2D8B800A056AA /* BrandModel.swift */,
+				382A60FF26B2D9C600A056AA /* BrandViewModel.swift */,
+			);
+			path = BrandView;
 			sourceTree = "<group>";
 		};
 		38B261B726B1CCE10050299D = {
@@ -227,8 +293,6 @@
 			isa = PBXGroup;
 			children = (
 				382A60B126B1DCAB00A056AA /* Network */,
-				382A60E726B1EDD400A056AA /* ViewModels */,
-				382A60E626B1EDC800A056AA /* Models */,
 				382A60E526B1EDC100A056AA /* Views */,
 				38B261C326B1CCE10050299D /* SneakerFilesApp.swift */,
 				38B261C726B1CCE40050299D /* Assets.xcassets */,
@@ -394,22 +458,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A60E226B1DCAB00A056AA /* Router.swift in Sources */,
+				382A60FE26B2D8B800A056AA /* BrandModel.swift in Sources */,
 				382A60D026B1DCAB00A056AA /* URLParameterEncoding.swift in Sources */,
 				382A60E426B1DCAB00A056AA /* Errors.swift in Sources */,
+				382A610226B2E4B800A056AA /* PopularKicksListView.swift in Sources */,
 				382A60EF26B1F03000A056AA /* SettingsView.swift in Sources */,
+				382A60FA26B2D6EB00A056AA /* BrandListView.swift in Sources */,
 				382A60E926B1EDF200A056AA /* HomeView.swift in Sources */,
 				382A60DC26B1DCAB00A056AA /* EndPointTypes.swift in Sources */,
 				382A60DF26B1DCAB00A056AA /* HTTPTask.swift in Sources */,
+				382A610026B2D9C600A056AA /* BrandViewModel.swift in Sources */,
 				382A60F126B2232300A056AA /* PopularKicksViewModel.swift in Sources */,
 				382A60D626B1DCAB00A056AA /* NetworkManager.swift in Sources */,
 				382A60D526B1DCAB00A056AA /* PopularKicks+NetworkManager.swift in Sources */,
+				382A610626B4718900A056AA /* AddKicksView.swift in Sources */,
 				382A60CF26B1DCAB00A056AA /* ParameterEncoding.swift in Sources */,
 				382A60F326B225D500A056AA /* PopularKicksModel.swift in Sources */,
+				382A610826B472E500A056AA /* RecentlyWornView.swift in Sources */,
 				382A60D126B1DCAB00A056AA /* JSONParameterEncoding.swift in Sources */,
 				38B261C626B1CCE10050299D /* MainView.swift in Sources */,
+				382A610426B309BA00A056AA /* RemoteImage.swift in Sources */,
 				382A60DB26B1DCAB00A056AA /* PopularKicksEndPoint.swift in Sources */,
 				382A60EB26B1EF2800A056AA /* SearchView.swift in Sources */,
 				382A60E326B1DCAB00A056AA /* HTTPMethod.swift in Sources */,
+				382A610A26B4897200A056AA /* SearchBarView.swift in Sources */,
 				38B261C426B1CCE10050299D /* SneakerFilesApp.swift in Sources */,
 				382A60E126B1DCAB00A056AA /* NetworkRouter.swift in Sources */,
 				382A60ED26B1EFEB00A056AA /* PopularView.swift in Sources */,

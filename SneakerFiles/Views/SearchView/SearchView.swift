@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State var searchText: String
+    @State var searching: Bool
+    
     var body: some View {
         NavigationView {
-            ZStack {
-                Color.green
+            VStack(alignment: .leading) {
+                SearchBarView(searchText: $searchText, searching: $searching)
+                List {
+                    
+                }
             }.navigationTitle("Search")
         }
     }
@@ -19,6 +25,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchView(searchText: "", searching: false)
     }
 }
