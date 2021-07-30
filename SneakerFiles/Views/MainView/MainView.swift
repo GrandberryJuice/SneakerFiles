@@ -19,7 +19,7 @@ struct MainView: View {
                     Text("Home")
                 }
         
-            SearchView()
+            SearchView(searchText: "", searching: false)
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }

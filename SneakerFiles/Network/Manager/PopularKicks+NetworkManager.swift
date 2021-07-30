@@ -29,7 +29,6 @@ extension NetworkManager {
                     
                     do {
                         let apiResponse = try JSONDecoder().decode([PopularKicksModel].self, from: responseData)
-                        print(apiResponse)
                         completion(.success(apiResponse))
                     }catch(let error) {
                         completion(.failure(.invalidData))

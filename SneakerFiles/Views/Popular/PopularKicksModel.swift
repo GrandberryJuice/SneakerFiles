@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct PopularKicksModel: Decodable {
+struct PopularKicksModel: Identifiable, Decodable {
+    let id = UUID()
     var lowestResellPrice: lowestResellPrice
     
     struct lowestResellPrice: Decodable {
